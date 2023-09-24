@@ -1,0 +1,2 @@
+- _target_: utils.read_background_template
+  data_dir: ${dataset_dir}/background/bg_template

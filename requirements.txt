@@ -1,0 +1,28 @@
+# download gpu version if possible
+# torch==1.10.1
+# torchvision==0.11.2
+# download from https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+# detectron2
+# needed to transform on syn COCO segmentation RLE
+shapely
+
+numpy
+scikit-image==0.18.0
+scikit-learn
+Pillow
+tqdm
+opencv-python
+wandb
+pandas
+pycocotools
+hydra-core
+# weird issue with detectron2
+setuptools==59.5.0
+# for faster json speedup
+ujson
+# fix weird bug
+omegaconf==2.1
+transformers==4.22.2
+diffusers==0.9.0
+kornia
+timm

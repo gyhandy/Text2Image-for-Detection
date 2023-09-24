@@ -1,0 +1,7 @@
+_target_: utils.read_real_VOC_foregrounds
+
+# assume dataset_dir: data/voc2012/
+data_list: ${dataset_dir}/train_cls-1shot.txt
+data_dir: ${dataset_dir}/VOC2012/JPEGImages
+anno_dir: ${dataset_dir}/VOC2012/Annotations
+seg_dir: ${dataset_dir}/VOC2012/SegmentationObject

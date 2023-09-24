@@ -1,0 +1,13 @@
+# @package _global_
+
+defaults:
+  - override /ds: VOC
+  - override /fg@fg_real: VOC/1shot/real # 1 shot real foregrounds
+  - override /fg@fg_syn: VOC/fg_template # zero-shot fg template
+  - override /bg@bg_real: VOC/1shot/real # 1 shot real backgrounds
+  - override /bg@bg_syn: VOC/1shot/bg_template_plus_dalle # zero-shot bg template + 1 shot context augmented captions
+
+name: VOC-demo-1shot-syn+real
+dataset_dir: ${work_dir}/../data/test_data
+paster:
+  debug: True

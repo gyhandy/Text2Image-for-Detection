@@ -1,0 +1,35 @@
+# @package _global_
+
+# specify here default training configuration
+defaults:
+  - _self_
+  - ds: null
+  - fg@fg_real: null
+  - fg@fg_syn: null
+  - bg@bg_syn: null
+  - bg@bg_real: null
+  - paster: defaults
+  - exp: null
+
+  # enable color logging
+  - override hydra/hydra_logging: colorlog
+  - override hydra/job_logging: colorlog
+
+# path to original working directory
+# hydra hijacks working directory by changing it to the new log directory
+# so it's useful to have this path as a special variable
+# https://hydra.cc/docs/next/tutorials/basic/running_your_app/working_directory
+work_dir: ${hydra:runtime.cwd}
+
+dataset: ${ds.name}
+
+name: ??? # name of exp
+
+output_dir: ${work_dir}/../artifact/${dataset}/${name}
+
+# seed for random number generators in pytorch, numpy and python.random
+seed: 42
+
+hydra:
+  job:
+    chdir: True

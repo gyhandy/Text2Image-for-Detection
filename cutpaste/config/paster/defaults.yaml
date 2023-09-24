@@ -1,0 +1,27 @@
+debug: False # debug mode, if True, only paste 40 images for debugging purpose
+
+r: 2 # number of repeat
+repeat_background: ${paster.r} # alias
+c: 4 # number of foregrounds pasted onto each background
+num_cut_images: ${paster.c} # alias
+j: 1 # number of workers, 1 means no multiprocessing, to accelerate, set to something like 50
+max_workers: ${paster.j} # alias
+
+# random scale in percentage
+scale_factor: 0
+# random center translation in percentage
+center_translation_factor: 0
+# if true, after find circle still random scale instead of matching radius
+use_random_scaling: False
+# if set, each time sample num_cut from [lowerbound, num_cut_images]
+num_cut_lowerbound: null
+# if true, ablation study of random paste images in anywhere
+use_random_paste: False
+
+select_prob: uniform # how to sample backgrounds
+out_size: 512
+max_degree: 30
+
+# if set, only paste [start:to] instead of entire
+start: null
+to: null

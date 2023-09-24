@@ -1,0 +1,5 @@
+_target_: utils.read_entity_foregrounds
+
+dataset: ${dataset}
+rgb_dir: ${dataset_dir}/foreground/foreground_rgb
+mask_dir: ${dataset_dir}/foreground/foreground_mask
