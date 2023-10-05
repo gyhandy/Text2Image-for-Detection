@@ -1,6 +1,8 @@
 # Text2Image-for-Detection
 
-Official Implementation for ["Beyond Generation: Harnessing Text to Image Models for Object Detection and Segmentation"](https://arxiv.org/pdf/2309.05956.pdf)
+Official Implementation for ["DALL-E for Detection: Language-driven Compositional Image Synthesis for Object Detection"](https://arxiv.org/pdf/2309.05956.pdf) 
+
+Extention version: ["Beyond Generation: Harnessing Text to Image Models for Object Detection and Segmentation"](https://arxiv.org/pdf/2309.05956.pdf)
 
 <div align="center">
     <span><a href="https://gyhandy.github.io/"><strong>Yunhao Ge*</strong></a>,&nbsp;&nbsp;</span>
@@ -11,7 +13,7 @@ Official Implementation for ["Beyond Generation: Harnessing Text to Image Models
     <span><a href="https://vibhav-vineet.github.io/"><strong>Vibhav Vineet</strong></a></span>
 </div>
 
-Contact: [yunhaoge@usc.edu](mailto:yunhaoge@usc.edu)
+Contact: [yunhaoge@usc.edu](mailto:yunhaoge@usc.edu);  [jxu1@g.harvard.edu](mailto:jxu1@g.harvard.edu)
 
 ## Install
 
